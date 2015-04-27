@@ -17,12 +17,13 @@ function loadData() {
     city = $("#city").val();
     
     // build the img string
-    imgStr = "https://maps.googleapis.com/maps/api/streetview?size=600x300&location=" +
-             street + ", " + city;
+    imgStr = 'http://maps.googleapis.com/maps/api/streetview?size=600x300&location=' +
+             street + ', ' + city + '';
     
-    $body.append('<img class="bgimg" src=' + imgStr + '>');    
+    $body.append('<img class="bgimg" src="' + imgStr + '">');    
     
     console.log("imgStr = " + imgStr);
+    console.log("#bgimg");
 
     // YOUR CODE GOES HERE!
 
